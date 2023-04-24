@@ -3,7 +3,7 @@ echo -e "\e[34m>>>>>>>>>>>>>>>>>Disable Mysql 8 Version<<<<<<<<<<<<<<<<<<<\e[0m"
 dnf module disable mysql -y
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Disable Mysql Repo File<<<<<<<<<<<<<<<<<<<\e[0m"
-cp mysql.repo /etc/yum.repos.d/mysql.repo
+cp /home/centos/Roboshop-shell/mysql.repo /etc/yum.repos.d/mysql.repo
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Install Mysql<<<<<<<<<<<<<<<<<<<\e[0m"
 yum install mysql-community-server -y
