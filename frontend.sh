@@ -9,3 +9,5 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
  systemctl enable nginx
  systemctl start nginx
+
+ echo "Ensure you replace the localhost with the actual ip address of those component server. Word localhost is just used to avoid the failures on the Nginx Server."

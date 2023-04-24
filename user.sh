@@ -14,3 +14,4 @@ systemctl start user
 cp mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host mongodb.vintagevings.ga </app/schema/user.js
+echo "You need to update user server ip address in frontend configuration. Configuration file is /etc/nginx/default.d/roboshop.conf"
