@@ -29,7 +29,7 @@ systemctl enable user
 systemctl restart user
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>copy mongodb repo<<<<<<<<<<<<<<<<<<<\e[0m"
-cp /home/centos/Roboshop-shellmongo.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/Roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Install MongoDB Client <<<<<<<<<<<<<<<<<<<\e[0m"
 yum install mongodb-org-shell -y
