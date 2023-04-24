@@ -26,7 +26,7 @@ echo -e "\e[34m>>>>>>>>>>>>>>>>>Load Schema<<<<<<<<<<<<<<<<<<<\e[0m"
 mysql -h mysql.vintagevings.ga -uroot -pRoboShop@1 < /app/schema/shipping.sql
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Start Shipping Service<<<<<<<<<<<<<<<<<<<\e[0m"
-cp /home/centos/Roboshop-shell/shipping.serice /etc/systemd/system/shipping.service
+cp /home/centos/Roboshop-shell/shipping.service /etc/systemd/system/shipping.service
 systemctl daemon-reload
 systemctl enable shipping
 systemctl restart shipping
