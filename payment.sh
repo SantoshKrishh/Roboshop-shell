@@ -1,4 +1,4 @@
-echo -e "\e[34m>>>>>>>>>>>>>>>>>Install Pyhton<<<<<<<<<<<<<<<<<<<\e[0m"
+echo -e "\e[34m>>>>>>>>>>>>>>>>>Install Python<<<<<<<<<<<<<<<<<<<\e[0m"
 yum install python36 gcc python3-devel -y
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Add Application user<<<<<<<<<<<<<<<<<<<\e[0m"
