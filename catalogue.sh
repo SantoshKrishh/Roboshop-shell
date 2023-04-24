@@ -8,6 +8,7 @@ echo -e "\e[34m>>>>>>>>>>>>>>>>> Add Application user<<<<<<<<<<<<<<<<<<<\e[0m"
 useradd roboshop
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Create Application Directory<<<<<<<<<<<<<<<<<<<\e[0m"
+rm -rf /app
 mkdir /app
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Download Application Content<<<<<<<<<<<<<<<<<<<\e[0m"
@@ -21,7 +22,7 @@ echo -e "\e[34m>>>>>>>>>>>>>>>>>Install NodeJS Dependencies<<<<<<<<<<<<<<<<<<<\e
 npm install
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Copy catalogue systemd file<<<<<<<<<<<<<<<<<<<\e[0m"
-cp catalogue.service /etc/systemd/system/catalogue.service
+cp /home/centos/Roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Start catalogue Service<<<<<<<<<<<<<<<<<<<\e[0m"
 systemctl daemon-reload
