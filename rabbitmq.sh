@@ -1,5 +1,7 @@
 source common.sh
 
+dirname $0
+
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Setup Erlang Repos<<<<<<<<<<<<<<<<<<<\e[0m"
 curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | bash
 
@@ -16,3 +18,6 @@ rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Start RabbitMQ Service<<<<<<<<<<<<<<<<<<<\e[0m"
 systemctl enable rabbitmq-server
 systemctl restart rabbitmq-server
+
+
+
