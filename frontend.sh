@@ -1,3 +1,5 @@
+source common.sh
+
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Install Nginx<<<<<<<<<<<<<<<<<<<\e[0m"
 yum install nginx -y
 # roboshop.conf file is created separately in git repo and is made to be copied to desired dir in the instance

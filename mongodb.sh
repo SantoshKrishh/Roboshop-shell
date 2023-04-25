@@ -1,3 +1,5 @@
+source common.sh
+
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Copying Mongo Repo file<<<<<<<<<<<<<<<<<<<\e[0m"
 cp /home/centos/Roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 

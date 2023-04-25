@@ -1,3 +1,5 @@
+source common.sh
+
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Disable Mysql 8 Version<<<<<<<<<<<<<<<<<<<\e[0m"
 dnf module disable mysql -y

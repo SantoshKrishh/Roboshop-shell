@@ -1,3 +1,5 @@
+source common.sh
+
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Modifying Redis repo<<<<<<<<<<<<<<<<<<<\e[0m"
 yum install https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
 
