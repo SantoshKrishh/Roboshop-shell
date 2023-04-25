@@ -2,6 +2,8 @@ source common.sh
 
 dirname $0
 
+exit
+
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Setup Erlang Repos<<<<<<<<<<<<<<<<<<<\e[0m"
 curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | bash
 
