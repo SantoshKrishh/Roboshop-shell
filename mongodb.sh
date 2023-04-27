@@ -1,7 +1,8 @@
-source common.sh
+script_path=$(dirname $0)
+source ${script_path}/common.sh
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Copying Mongo Repo file<<<<<<<<<<<<<<<<<<<\e[0m"
-cp /home/centos/Roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
+cp ${script_path}/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Installing MongoDB<<<<<<<<<<<<<<<<<<<\e[0m"
 yum install mongodb-org -y

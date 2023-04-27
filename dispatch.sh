@@ -1,4 +1,5 @@
-source common.sh
+script_path=$(dirname $0)
+source ${script_path}/common.sh
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Install Golang<<<<<<<<<<<<<<<<<<<\e[0m"
 yum install golang -y
@@ -22,7 +23,7 @@ go get
 go build
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Copying service files<<<<<<<<<<<<<<<<<<<\e[0m"
-cp /home/centos/Roboshop-shell/dispatch.service /etc/systemd/system/dispatch.service
+cp ${script_path}/dispatch.service /etc/systemd/system/dispatch.service
 
 echo -e "\e[34m>>>>>>>>>>>>>>>>>Starting services<<<<<<<<<<<<<<<<<<<\e[0m"
 systemctl daemon-reload
