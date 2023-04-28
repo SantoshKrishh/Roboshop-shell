@@ -14,6 +14,6 @@ echo -e "\e[36m>>>>>>>>> Install MongoDB Client <<<<<<<<\e[0m"
 yum install mongodb-org-shell -y
 
 echo -e "\e[36m>>>>>>>>> Load Schema <<<<<<<<\e[0m"
-mongo --host mongodb-dev.rdevopsb72.online </app/schema/user.js
+mongo --host mongodb.rdevopsb72.online </app/schema/user.js
 
 echo "You need to update user server ip address in frontend configuration. Configuration file is /etc/nginx/default.d/roboshop.conf"
